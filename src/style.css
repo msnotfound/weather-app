@@ -1,0 +1,45 @@
+/* Reset styles */
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+  }
+  
+  /* Container for the app */
+.weather-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Input field and button */
+.weather-app input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+.weather-app button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Weather information display */
+.weather-info {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+.weather-info h2 {
+    font-size: 24px;
+  }
+  
+.weather-info p {
+    font-size: 18px;
+  }
