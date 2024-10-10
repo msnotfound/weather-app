@@ -4822,9 +4822,9 @@ const fetchWeather = async city => {
     // Display the weather data
     weatherInfo.innerHTML = `<p>Longitude: ${data.coord.lon}</p><p>Lattitude: ${data.coord.lat}</p><p>Temperature: ${data.main.temp} Celsius</p><p>Humidity: ${data.main.humidity}%
       <p>Minimum Temperature: ${data.main.temp_min}</p><p>Maximum temperature: ${data.main.temp_max} Celsius</p>
-      <p>Visibility: ${data.visibility} m<p>`;
+      <p>Visibility: ${data.visibility} m</p>`;
   } catch (error) {
-    console.error(error);
+    weatherInfo.innerHTML = `<p>City not found</p>`;
   }
 };
 })();
